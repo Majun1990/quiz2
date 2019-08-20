@@ -1,0 +1,12 @@
+<h1>Tenant List</h1>
+    <% @tenants.each do |tenant| %>
+        <div>
+            <h2><%= tenant.name %></h2><br/>
+            <i><%= tenant.address %><i><br/>
+            <i><%= tenant.email %></i><br/>
+            <i><%= tenant.phone %></i><br/>
+        </div>
+        <hr/>
+    <% end %>
+
+    <button><%= link_to 'New Tenant', new_tenant_path %></button>

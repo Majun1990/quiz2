@@ -1,0 +1,8 @@
+<h1>Add New Tenant</h1>
+    <%= simple_form_for @tenant do |f| %>
+        <%= f.input :name %>
+        <%= f.input :address %>
+        <%= f.input :email %>
+        <%= f.input :phone %><br/>
+        <%= f.submit 'Create' %>
+    <% end %>
